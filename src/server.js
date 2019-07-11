@@ -5,18 +5,6 @@ import schema from './schema';
 
 const PORT = process.env.PORT || 4000;
 
-const typeDefs = `
-  type Query{
-    hello: String!
-  }
-`;
-
-const resolvers = {
-  Query: {
-    hello: () => 'hi'
-  }
-};
-
 const server = new GraphQLServer({ schema });
 server.express.use(logger('dev'));
 server.start({ port: PORT }, () =>
