@@ -1,7 +1,14 @@
+import dotenv from 'dotenv';
+import path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '.env') });
+
 import logger from 'morgan';
-require('dotenv').config();
 import { GraphQLServer } from 'graphql-yoga';
+
 import schema from './schema';
+import { sendSecretMail } from './utils';
+
+console.log(sendSecretMail('call5h5ong@gmail.com', '123'));
 
 const PORT = process.env.PORT || 4000;
 
