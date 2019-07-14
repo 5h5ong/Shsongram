@@ -10,6 +10,6 @@ const jwtOptions = {
   secret: process.env.JWT_SECRET
 };
 
-cosnt verifyUser = (payload, done) => {};
+const verifyUser = (payload, done) => {};
 
 passport.use(new JwtStrategy(jwtOptions, verifyUser));
