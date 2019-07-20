@@ -14,10 +14,10 @@ Instragram clone with Express + Prisma + React and React Native
 - [x] Search by location
 - [x] Follow User
 - [x] Unfollow User
-- [ ] See user profile
-- [ ] See the full photo
+- [x] Edit my profile
+- [x] See user profile
 - [ ] See MY profile
-- [ ] Edit my profile
+- [ ] See the full photo
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
