@@ -1,5 +1,4 @@
 import { isAuthenticated } from '../../../middlewares';
-import { makePrismaClientClass } from 'prisma-client-lib';
 import { prisma } from '../../../../generated/prisma-client';
 
 export default {
