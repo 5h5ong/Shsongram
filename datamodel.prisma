@@ -36,7 +36,6 @@ type Comment {
   text: String!
   user: User! @relation(name: "CommentsOfUser")
   post: Post! @relation(name: "CommentsOfPost")
-
 }
 
 type File {
