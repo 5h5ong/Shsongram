@@ -29,7 +29,6 @@ type Like {
   id: ID! @id
   user: User! @relation(name: "LikesOfUser")
   post: Post! @relation(name: "LikesOfPost")
-
 }
 
 type Comment {
