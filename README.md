@@ -21,6 +21,6 @@ Instragram clone with Express + Prisma + React and React Native
 - [x] Edit the photo (Delete)
 - [x] See the feed
 - [x] See rooms
-- [ ] See room
 - [ ] Send private message
+- [ ] See room
 - [ ] Receive message (Realtime)
