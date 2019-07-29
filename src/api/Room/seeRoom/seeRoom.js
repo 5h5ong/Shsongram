@@ -8,12 +8,18 @@ export default {
       const { user } = request;
       const { roomId } = args;
       const canSee = await prisma.$exists.room({
-        participants_some: { id: user.id }
+        AND: [
+          { id: roomId },
+          {
+            participants_some: { id: user.id }
+          }
+        ]
       });
+      console.log('canSee: ', canSee);
       if (canSee) {
         return prisma.room({ id: roomId }).$fragment(ROOM_FRAGMENT);
       } else {
-        throw Error('어느 대화방에도 속해있지 않습니다.');
+        throw Error('해당 대화방에 속해있지 않습니다.');
       }
     }
   }
