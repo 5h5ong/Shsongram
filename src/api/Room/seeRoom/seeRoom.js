@@ -17,7 +17,7 @@ export default {
       });
       console.log('canSee: ', canSee);
       if (canSee) {
-        return prisma.room({ id: roomId }).$fragment(ROOM_FRAGMENT);
+        return prisma.room({ id: roomId });
       } else {
         throw Error('해당 대화방에 속해있지 않습니다.');
       }
