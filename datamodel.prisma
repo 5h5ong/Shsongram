@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-  avatar: String
+  avatar: String @default(value: "http://rgo4.com/files/attach/images/2676751/151/162/013/2da087414bc2e7f8d5f434c94bbbe8ad.jpg")
   username: String! @unique
   email: String! @unique
   firstName: String @default(value: " ")
@@ -15,7 +15,6 @@ type User {
   loginSecret: String
   createdAt: DateTime! @createdAt
 }
-
 
 type Post {
   id: ID! @id
