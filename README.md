@@ -1,4 +1,4 @@
-# shsongram
+# shsongram with Prisma
 
 Instagram clone을 만들기 위한 서버입니다.
 
