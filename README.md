@@ -1,9 +1,10 @@
 # shsongram
 
-Instragram clone with Express + Prisma + React and React Native
+Instagram clone을 만들기 위한 서버입니다.
 
 ## User Stories
 
+> ALL KILL ㅡㅡd
 - [x] Create account
 - [x] Request Secret
 - [x] Confirm Secret (Login)
@@ -24,3 +25,4 @@ Instragram clone with Express + Prisma + React and React Native
 - [x] See room
 - [x] Send private message
 - [x] Receive message (Realtime)
+
