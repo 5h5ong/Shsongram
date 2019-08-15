@@ -2,7 +2,7 @@
 
 Instagram clone을 만들기 위한 서버입니다.
 
-## User Stories
+## MUST DO IT
 
 > ALL KILL ㅡㅡd
 - [x] Create account
