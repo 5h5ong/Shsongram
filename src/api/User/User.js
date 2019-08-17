@@ -13,7 +13,7 @@ export default {
         .usersConnection({ where: { followers_some: { id } } })
         .aggregate()
         .count(),
-    fullName: ({ id }) => {
+    fullName: parent => {
       return `${parent.firstName} ${parent.lastName}`;
     },
     followersCount: parent =>
