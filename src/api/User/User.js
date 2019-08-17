@@ -21,7 +21,7 @@ export default {
     fullName: parent => {
       return `${parent.firstName} ${parent.lastName}`;
     },
-    followersCount: parent =>
+    followersCount: ({ id }) =>
       prisma
         .usersConnection({ where: { following_some: { id } } })
         .aggregate()
