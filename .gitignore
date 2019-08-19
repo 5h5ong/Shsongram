@@ -63,3 +63,7 @@ typings/
 
 # prisma
 generated
+prisma.yml
+
+# deploy
+build
