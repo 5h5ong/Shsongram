@@ -5,6 +5,9 @@
   "repository": "https://github.com/5h5ong/shsongram",
   "author": "5h5ong <Call5h5ong@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "yarn": "1.16.0"
+  },
   "dependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.4",
