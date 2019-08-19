@@ -16,6 +16,7 @@ const sendMail = email => {
       domain: process.env.MAILGUN_DOMAIN
     }
   };
+  console.log(options);
   const client = nodemailer.createTransport(mgTransport(options));
   return client.sendMail(email);
 };
