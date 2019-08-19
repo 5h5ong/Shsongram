@@ -13,7 +13,7 @@ const sendMail = email => {
   const options = {
     auth: {
       api_key: process.env.MAILGUN_APIKEY,
-      domain: process.env.NAILGUN_DOMAIN
+      domain: process.env.MAILGUN_DOMAIN
     }
   };
   const client = nodemailer.createTransport(mgTransport(options));
