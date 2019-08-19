@@ -1,4 +1,4 @@
-endpoint: https://us1.prisma.sh/call5h5ong-a7d8b0/shsongram/dev
+endpoint: ${env:PRISMA_ENDPOINT}
 datamodel: datamodel.prisma
 
 generate:
